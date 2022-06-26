@@ -14,29 +14,31 @@
 <body id="body_id">
     <!--Navigation Bar-->
     <div class="navbar">
-        <a href="home.html" id="navbar_logo">PORTFOLIO</a>
-        <div class="navbar_toggle" id="mobile-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+        <div class="navbar_container">
+            <a href="home.html" id="navbar_logo">PORTFOLIO</a>
+            <div class="navbar_toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar_menu">
+                <li class="menu_item">
+                    <a href="#body_id" class=" menu_links">Home</a>
+                </li>
+                <li class="menu_item">
+                    <a href="#about_me_id" class=" menu_links">About</a>
+                </li>
+                <li class="menu_item">
+                    <a href="#skills_id" class=" menu_links">Skills</a>
+                </li>
+                <li class="menu_item">
+                    <a href="#projects_id" class=" menu_links">Projects</a>
+                </li>
+                <li class="menu_item">
+                    <a href="#contact_me_id" class=" menu_links">Contact</a>
+                </li>
+            </ul>
         </div>
-        <menu class="navbar_menu">
-            <li class="menu_item">
-                <a href="#body_id" class=" menu_links">Home</a>
-            </li>
-            <li class="menu_item">
-                <a href="#about_me_id" class=" menu_links">About</a>
-            </li>
-            <li class="menu_item">
-                <a href="#skills_id" class=" menu_links">Skills</a>
-            </li>
-            <li class="menu_item">
-                <a href="#projects_id" class=" menu_links">Projects</a>
-            </li>
-            <li class="menu_item">
-                <a href="#contact_me_id" class=" menu_links">Contact</a>
-            </li>
-        </menu>
     </div>
 
     <!--Intro Section-->
@@ -52,7 +54,7 @@
                         </svg>
                     </i>
                 </a>
-                <a href="https://github.com/RishiSajayUF24" target="_blank" rel="noopener noreferrer" class="social_media_links">
+                <a href="https://github.com/RishiSajay" target="_blank" rel="noopener noreferrer" class="social_media_links">
                     <i class="github_icon">
                         <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0 1 38.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z"></path>
                         </svg>
@@ -94,14 +96,14 @@
                    My name is Rishi Sajay and I am a <mark class="mark1">UF Undergraduate</mark>
                 </h3>
                 <p class="about_me_paragraph">
-                   Hello! I am a rising junior at the University of Florida. I was introduced to computer science in highschool, and I 
+                   Hello! I am a rising junior at the University of Florida. I was introduced to computer science in high school, and I 
                    quickly grew to enjoy it. When I graduated, I decided to follow this interest in college. I am currently pursuing a Bachelor of Science degree in 
                    Computer Science at the UF College of Engineering, along with dual minors in Mathematics and Digital Arts and Sciences. 
-                   I am spending my free time learning about HTML, CSS, Javascript, app development, and machine learning. This website is a 
+                   I am spending my free time learning about HTML, CSS, JavaScript, app development, and machine learning. This website is a 
                    medium to showcase my skills and passion for computer science. I hope you enjoy what you see, and I always appreciate feedback.
                    Thank you! 
                 </p>
-                <button class="resume_button"><a href="files/Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+                <button class="resume_button"><a href="Files/Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
                 </button>
             </div>
             <div class="my_picture"></div>
@@ -236,7 +238,7 @@
                 <p class="skills_paragraph">
                     I am very fluent in Java, C++, MATLAB, and Python. I have the most experience in C++. I have recently been learning HTML, 
                     Javascript, and CSS, which I hope to have demonstrated with this website.
-                    I have done multiple projects in Unity in highschooland and college. 
+                    I have done multiple projects in Unity in high school and college. 
                     I recently took an Applied Machine Learning course and have been looking into my own projects in the field of ML, as it is 
                     a topic that greatly interests me. 
                     I have moderate experience in Scikit Learn and Keras, including neural networks. 
@@ -254,27 +256,45 @@
                 <h2>Weather App</h2>
                 <p>Website that provides real time weather information based on city name or zip code.
                 </p>
-                <h6 class="powered_by">Powered by HTML, Javascript, CSS, and the open weather api</h6>
+                <h6 class="powered_by">Powered by HTML, Javascript, CSS, and the open weather map api</h6>
                 <button class="card_button"><a href="weather.html" target="_blank" rel="noopener noreferrer">Go to site</a></button>
+            </div>
+            <div class="projects_card">
+                <h2>KD Tree</h2>
+                <p>Developed a KD Tree implementation for large scale multidimensional data storage. The program creates a KD Tree from a given dataset
+                    and then performs a range query on the tree, returning all tuples within the query. Refer to Github for a more detailed 
+                    explanation of KD Trees. 
+                </p>
+                <h6 class="powered_by">Powered by C++</h6>
+                <button class="card_button"><a href="https://github.com/RishiSajay/KDTree" target="_blank" rel="noopener noreferrer">Github</a></button>
             </div>
             <div class="projects_card">
                 <h2>AEPS</h2>
                 <p>Another Educational Physics Simulator! This game simulates basic physics concepts
-                    to help students better understand how they work. Download the zip file, unzip it, navigate to the 
-                    build folder, and run the aeps file to play the game! Co-developers - Max LoGalbo, Stephen Nguyen. 
+                    to help students better understand how they work.
                 </p>
                 <h6 class="powered_by">Powered by Unity</h6>
                 <button class="card_button"><a href="Files/Build.zip">Download Game</a></button>
-                <button class="card_button"><a href="https://github.com/RishiSajayUF24/AEPS" target="_blank" rel="noopener noreferrer">Github</a></button>
+                <button class="card_button"><a href="https://github.com/RishiSajay/AEPS" target="_blank" rel="noopener noreferrer">Github</a></button>
 
             </div>
             <div class="projects_card">
                 <h2>Portfolio Website</h2>
-                <p>I developed this website using html, javascript. Please feel free to look at my code 
+                <p>I developed this website using html, CSS, and JavaScript. Please feel free to look at my code 
                     through Github!
                 </p>
-                <h6 class="powered_by">Powered by HTML, Javascript, CSS, and the Formspree api</h6>
-                <button class="card_button"><a href="https://github.com/RishiSajayUF24/PortfolioWebsite" target="_blank" rel="noopener noreferrer">Github</a></button>
+                <h6 class="powered_by">Powered by HTML, Javascript, and CSS</h6>
+                <button class="card_button"><a href="https://github.com/RishiSajay/PortfolioWebsite" target="_blank" rel="noopener noreferrer">Github</a></button>
+            </div>
+            <div class="projects_card">
+                <h2>Flight Optimizer</h2>
+                <p>This program gives users the most efficient flight paths based on cost for trips within the US based on 2018
+                    flight data. This project takes advantage of Dijkstra's  shortest path algorithm and large scale data manipulation. 
+                    Co-developers - Max LoGalbo, Chase Wrenn
+                </p>
+                <h6 class="powered_by">Powered by C++, SFML, TGUI, and Kaggle</h6>
+                <button class="card_button"><a href="https://github.com/chasewrennufl/Project3bFinal" target="_blank" rel="noopener noreferrer">Github</a></button>
+                <button class="card_button"><a href="Files/flight_project_report.pdf" target="_blank" rel="noopener noreferrer">Documentation</a></button>
             </div>
         </div>
     </div>
@@ -285,14 +305,20 @@
                 <h3 class="contact_me_text_intro">Get In <mark class="mark4">Touch</mark></h3>
                 <div class="message_intro">
                     Hello! Please fill out this form if you would like to get in touch with me.
-                    If you want to email me directly, click the email to the right. 
-                    If you would like to hire me for a freelance project,
+                    If you wish to email me directly, click on the email to the right. 
+                    If you want to hire me for a freelance project,
+                    describe your project in the message section. Thank you!
+                </div>
+                <div class="message_intro_small_screen">
+                    Hello! Please fill out this form if you would like to get in touch with me.
+                    If you wish to email me directly, click on the email below. 
+                    If you want to hire me for a freelance project,
                     describe your project in the message section. Thank you!
                 </div>
                 <form action="https://formspree.io/f/xnqwyvrg" method="POST" id="my-form">
                     <div class="name_email_container">
                         <input type="text" name="name" placeholder="Your Name" required="required" class="form_group user_name">
-                        <input type="text" name="email" placeholder="Your email" required="required" class="form_group user_email">
+                        <input type="text" name="email" placeholder="Your Email" required="required" class="form_group user_email">
                     </div>
                     <input type="text" name="subject" placeholder="Subject" required="required" class="form_group user_subject">
                     <textarea name="body" cols="30" rows="10" placeholder="Message" required="required" class="form_group user_message"></textarea> 
@@ -320,7 +346,6 @@
                             <div class="personal_info_text">407-721-0428</div>
                         </div>
                     </div>
-                    
                     <div class="pi address_container">
                         <div class="personal_info_icon">
                             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 12 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 0C2.69 0 0 2.5 0 5.5 0 10.02 6 16 6 16s6-5.98 6-10.5C12 2.5 9.31 0 6 0zm0 14.55C4.14 12.52 1 8.44 1 5.5 1 3.02 3.25 1 6 1c1.34 0 2.61.48 3.56 1.36.92.86 1.44 1.97 1.44 3.14 0 2.94-3.14 7.02-5 9.05zM8 5.5c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"></path>
