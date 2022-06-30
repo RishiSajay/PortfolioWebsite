@@ -99,7 +99,7 @@ resizeHeight = function()
     intro.style.height = height1 + "px";
   }
 
-  height2 = (myPic.getBoundingClientRect().bottom + 100) - (aboutMe.getBoundingClientRect().top);
+  height2 = (myPic.getBoundingClientRect().bottom + 150) - (aboutMe.getBoundingClientRect().top);
   aboutMe.style.height = height2 + "px";
 
   height3 = (skillsBody.getBoundingClientRect().bottom + 200) - (skills.getBoundingClientRect().top);
