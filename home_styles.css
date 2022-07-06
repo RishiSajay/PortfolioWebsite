@@ -240,36 +240,33 @@ Mini nav bar
         margin: 0 auto;
         width: 100vw;
         height: 100vh;
-        backdrop-filter: blur(10px);
+        /*backdrop-filter: blur(10px);*/
         visibility: visible;
         transition: 0.3s;
     }
-    /*
-    .navbar_menu
+
+    /*blur effect*/
+    .home_container.active 
     {
-        display: grid;
-        grid-template-columns: auto;
-        position: absolute;
-        top: -20px;
-        right: -1000px;
-        height: 100vh;
-        width: 50vw;
-        opacity: 0;
-        transition: all 0.3s ease;
+        filter: blur(10px)
+    }
+    .about_me_container.active 
+    {
+        filter: blur(10px)
+    }
+    .skills_container.active 
+    {
+        filter: blur(10px)
+    }
+    .progress_container.active 
+    {
+        filter: blur(10px)
+    }
+    .contact_me_container.active
+    {
+        filter: blur(10px)
     }
 
-    .navbar_menu.active
-    {
-        background-color: rgba(0, 0, 0, 0.5);
-        backdrop-filter: blur(8px);
-        opacity: 1;
-        top: -20px;
-        right: 0px;
-        height: 100vh;
-        width: 100vw;
-        transition: all 0.3s ease;
-    }
-*/
     .menu_item
     {
         position: relative;
@@ -324,6 +321,7 @@ Mini nav bar
     {
         transform: translateY(-7px) rotate(45deg);
     }
+
 
 }
 
@@ -790,7 +788,7 @@ Skills section
     align-items: center;
     flex-direction: column;
     color: white;
-    transition: 0.3s ease
+    transition: 0.3s ease;
 }
 
 .skills_title
@@ -804,7 +802,6 @@ Skills section
 .skills_body_container
 {
     display: flex;
-    flex-direction: row;
     max-width: 1600px;
 }
 
@@ -813,7 +810,7 @@ Skills section
     display: flex;
     flex-direction: column;
     position: relative;
-    margin-left: 5vw;
+    margin-left: 0px;
     width: 450px;
     height: 450px;
     top: 30px;
@@ -834,7 +831,7 @@ Skills section
 {
     display: flex;
     position: relative;
-    bottom: 00rem;
+    bottom: 0rem;
 }
 
 .skill
@@ -1041,20 +1038,6 @@ Skills section
     animation: circle_animation2 8s linear infinite;
 }
 
-
-.skills_text
-{
-    margin-top: 50px;
-    position: relative;
-    margin-left: 18vw;
-    width: 35vw;
-}
-
-.skills_text_intro
-{
-    font-size: 1.5rem;
-}
-
 /*javascript*/
 .javascript
 {
@@ -1062,6 +1045,11 @@ Skills section
     background: none;
     height: 118px;
     position: relative;
+}
+
+.javascript .skill_title
+{
+    left: 27px;
 }
 
 .javascript circle 
@@ -1101,6 +1089,21 @@ Skills section
     animation: circle_animation1 8s linear infinite;
 }
 
+.skills_text
+{
+    margin-top: 50px;
+    position: relative;
+    margin-left: 10vw;
+    left: 90px;
+    width: 35vw;
+    max-width: 600px;
+    min-width: 400px;
+}
+
+.skills_text_intro
+{
+    font-size: 1.5rem;
+}
 
 .mark2
 {
@@ -1115,11 +1118,6 @@ Skills section
 
 @media screen and (max-width: 1100px)
 {
-    .skills_container
-    {
-        /*height: 150vh;*/
-    }
-
     .skills_body_container
     {
         display: flex;
@@ -1137,6 +1135,7 @@ Skills section
     .skills_text
     {
         margin-left: 0;
+        left: 0;
         text-align: left;
         position: relative;
         width: 70vw;
@@ -1145,11 +1144,6 @@ Skills section
 
 @media screen and (max-width: 600px)
 {
-    .skills_container
-    {
-        /*height: 160vh;*/
-    }
-
     
     .skills_text
     {
@@ -1159,10 +1153,6 @@ Skills section
 
 @media screen and (max-width: 450px)
 {
-    .skills_container
-    {
-        /*height: 140vh;*/
-    }
 
     .progress_container
     {
@@ -1441,11 +1431,6 @@ Projects section
 
 @media screen and (max-width: 1200px)
 {
-    .projects_container
-    {
-        /*height: 200vh;*/
-    }
-
     .projects_intro
     {
         text-align: center;
@@ -1453,20 +1438,8 @@ Projects section
     }
 }
 
-@media screen and (max-width: 770px)
-{
-    .projects_container
-    {
-        /*height: 320vh;*/
-    }
-}
-
 @media screen and (max-width: 450px)
 {
-    .projects_container
-    {
-        /*height: 290vh;*/
-    }
 
     .projects_container
     {
@@ -1483,6 +1456,16 @@ Projects section
         width: 300px;
     }
 
+    .powered_by
+    {
+        left: 20px
+    }
+
+    .card_button
+    {
+        left: 20px
+    }
+
     /*change aeps card*/
     .projects_card:nth-child(3) p:after
     {
@@ -1491,7 +1474,7 @@ Projects section
 
     .projects_card:nth-child(3) .card_button:nth-of-type(2)
     {
-        left: 30px;
+        left: 20px;
     }
 
     .projects_card:nth-child(3) .card_button:nth-of-type(1)
@@ -1499,19 +1482,13 @@ Projects section
         display: none;
     }
 
+    /*update flight optimizer buttons*/
     .projects_card:nth-child(5) .card_button:nth-of-type(1)
     {
         left: 190px;
     }
 }
 
-@media screen and (max-width: 380px)
-{
-    .projects_container
-    {
-        /*height: 360vh;*/
-    }
-}
 
 /*
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1536,20 +1513,20 @@ Contact Me section
     text-underline-offset: 15px;
 }
 
-
 .contact_me_container_inner
 {
     margin-top: 25px;
     display: flex;
     justify-content: center;
     flex-direction: row;
+    max-width: 1600px;
 }
 
 .message_container
 {
     width: 45vw;
-    margin-left: 7vw;
-    
+    max-width: 1000px;
+    margin-left: 75px;
 }
 
 .contact_me_text_intro
@@ -1579,10 +1556,12 @@ Contact Me section
     flex-direction: row;
     margin-top: 10px;
     width: 45vw;
+    max-width: 1000px;
 }
 
 .form_group
 {
+    max-width: 1000px;
     border: none;
     outline: none;
     padding: 0.5rem;
@@ -1682,6 +1661,11 @@ Contact Me section
     margin-bottom: 20px;
 }
 
+.pi.phone_container
+{
+    margin-bottom: 10px;
+}
+
 .personal_info_icon
 {
     margin: 3px;
@@ -1711,6 +1695,7 @@ Contact Me section
     .message_container
     {
         width: 70vw;
+        margin-left: 20px;
     }
 
     .message_intro

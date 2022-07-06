@@ -5,10 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&family=IBM+Plex+Sans:wght@400;500&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="./home_styles.css">
+    
     <script src = "./home_script.js" defer></script>
 </head>
 <body id="body_id">
@@ -21,23 +32,26 @@
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
-            <ul class="navbar_menu">
-                <li class="menu_item">
-                    <a href="#body_id" class=" menu_links">Home</a>
-                </li>
-                <li class="menu_item">
-                    <a href="#about_me_id" class=" menu_links">About</a>
-                </li>
-                <li class="menu_item">
-                    <a href="#skills_id" class=" menu_links">Skills</a>
-                </li>
-                <li class="menu_item">
-                    <a href="#projects_id" class=" menu_links">Projects</a>
-                </li>
-                <li class="menu_item">
-                    <a href="#contact_me_id" class=" menu_links">Contact</a>
-                </li>
-            </ul>
+            <div class="navbar_menu_container">
+                <ul class="navbar_menu">
+                    <li class="menu_item">
+                        <a href="#body_id" class=" menu_links">Home</a>
+                    </li>
+                    <li class="menu_item">
+                        <a href="#about_me_id" class=" menu_links">About</a>
+                    </li>
+                    <li class="menu_item">
+                        <a href="#skills_id" class=" menu_links">Skills</a>
+                    </li>
+                    <li class="menu_item">
+                        <a href="#projects_id" class=" menu_links">Projects</a>
+                    </li>
+                    <li class="menu_item">
+                        <a href="#contact_me_id" class=" menu_links">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            
         </div>
     </div>
 
@@ -72,8 +86,7 @@
         <div class="intro_card_container">
             <div class="intro_card">
                 <div class="text">
-                    <p>Welcome! My name is Rishi Sajay, and I am a programmer. This website is a
-                        collection of my work. Check out my projects, socials,
+                    <p>Welcome! This website is a collection of my work. Check out my projects, socials,
                         and more!
                     </p>
                 </div>
@@ -116,7 +129,7 @@
         <div class="skills_body_container">
             <div class="progress_container">
                 <div class="row1">
-                    <div class="skill python">
+                    <div class="skill c_plus_plus">
                         <svg height="120" width="120" class="circle_svg">
                             <defs>
                                 <linearGradient id="linear1" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -126,10 +139,10 @@
                             </defs>
                             <circle cx="60" cy="60" r="57" />
                         </svg>
-                        <h6 class="skill_title">Python</h6>
-                        <p class="skill_level">Advanced</p>
+                        <h6 class="skill_title">C++</h6>
+                        <p class="skill_level">Expert</p>
                     </div>
-                    <div class="skill c_plus_plus">
+                    <div class="skill python">
                         <svg height="120" width="120" class="circle_svg">
                             <defs>
                                 <linearGradient id="linear2" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -139,8 +152,8 @@
                             </defs>
                             <circle cx="60" cy="60" r="57" />
                         </svg>
-                        <h6 class="skill_title">C++</h6>
-                        <p class="skill_level">Expert</p>
+                        <h6 class="skill_title">Python</h6>
+                        <p class="skill_level">Advanced</p>
                     </div>
                     <div class="skill java">
                         <svg height="120" width="120" class="circle_svg">
@@ -157,47 +170,6 @@
                     </div>
                 </div>
                 <div class="row2">
-                    <div class="skill html">
-                        <svg height="120" width="120" class="circle_svg">
-                            <defs>
-                                <linearGradient id="linear4" x1="0%" y1="0%" x2="100%" y2="0%">
-                                  <stop offset="0%"   stop-color="#FFFE00"/>
-                                  <stop offset="100%" stop-color="#43C300"/>
-                                </linearGradient>
-                            </defs>
-                            <circle cx="60" cy="60" r="57" />
-                        </svg>
-                        <h6 class="skill_title">HTML</h6>
-                        <p class="skill_level">Novice</p>
-                    </div>
-                    <div class="skill css">
-                        <svg height="120" width="120" class="circle_svg">
-                            <defs>
-                                <linearGradient id="linear5" x1="0%" y1="0%" x2="100%" y2="0%">
-                                  <stop offset="0%"   stop-color="#43C300"/>
-                                  <stop offset="100%" stop-color="#15FD81"/>
-                                </linearGradient>
-                            </defs>
-                            <circle cx="60" cy="60" r="57" />
-                        </svg>
-                        <h6 class="skill_title">CSS</h6>
-                        <p class="skill_level">Proficient</p>
-                    </div>
-                    <div class="skill javascript">
-                        <svg height="120" width="120" class="circle_svg">
-                            <defs>
-                                <linearGradient id="linear6" x1="0%" y1="0%" x2="100%" y2="0%">
-                                  <stop offset="0%"   stop-color="#15FD81"/>
-                                  <stop offset="100%" stop-color="#00FFD0"/>
-                                </linearGradient>
-                            </defs>
-                            <circle cx="60" cy="60" r="57" />
-                        </svg>
-                        <h6 class="skill_title">Javscript</h6>
-                        <p class="skill_level">Proficient</p>
-                    </div>
-                </div>
-                <div class="row3">
                     <div class="skill unity">
                         <svg height="120" width="120" class="circle_svg">
                             <defs>
@@ -237,7 +209,47 @@
                         <h6 class="skill_title">Matlab</h6>
                         <p class="skill_level">Advanced</p>
                     </div>
-                
+                </div>
+                <div class="row3">
+                    <div class="skill javascript">
+                        <svg height="120" width="120" class="circle_svg">
+                            <defs>
+                                <linearGradient id="linear4" x1="0%" y1="0%" x2="100%" y2="0%">
+                                  <stop offset="0%"   stop-color="#FFFE00"/>
+                                  <stop offset="100%" stop-color="#43C300"/>
+                                </linearGradient>
+                            </defs>
+                            <circle cx="60" cy="60" r="57" />
+                        </svg>
+                        <h6 class="skill_title">Javscript</h6>
+                        <p class="skill_level">Proficient</p>
+                    </div>
+                    <div class="skill css">
+                        <svg height="120" width="120" class="circle_svg">
+                            <defs>
+                                <linearGradient id="linear5" x1="0%" y1="0%" x2="100%" y2="0%">
+                                  <stop offset="0%"   stop-color="#43C300"/>
+                                  <stop offset="100%" stop-color="#15FD81"/>
+                                </linearGradient>
+                            </defs>
+                            <circle cx="60" cy="60" r="57" />
+                        </svg>
+                        <h6 class="skill_title">CSS</h6>
+                        <p class="skill_level">Proficient</p>
+                    </div>
+                    <div class="skill html">
+                        <svg height="120" width="120" class="circle_svg">
+                            <defs>
+                                <linearGradient id="linear6" x1="0%" y1="0%" x2="100%" y2="0%">
+                                  <stop offset="0%"   stop-color="#15FD81"/>
+                                  <stop offset="100%" stop-color="#00FFD0"/>
+                                </linearGradient>
+                            </defs>
+                            <circle cx="60" cy="60" r="57" />
+                        </svg>
+                        <h6 class="skill_title">HTML</h6>
+                        <p class="skill_level">Novice</p>
+                    </div>
                 </div>
             </div>
             <div class="skills_text">
@@ -360,8 +372,7 @@
                             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 12 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 0C2.69 0 0 2.5 0 5.5 0 10.02 6 16 6 16s6-5.98 6-10.5C12 2.5 9.31 0 6 0zm0 14.55C4.14 12.52 1 8.44 1 5.5 1 3.02 3.25 1 6 1c1.34 0 2.61.48 3.56 1.36.92.86 1.44 1.97 1.44 3.14 0 2.94-3.14 7.02-5 9.05zM8 5.5c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"></path>
                             </svg>
                         </div>
-                        <div class="personal_info_text">School: 1231 SW 3rd Ave, Gainesville, FL 32601 <br>
-                            Permanent: 3049 New Bern Cove, Oviedo, FL 32765</div>
+                        <div class="personal_info_text">1231 SW 3rd Ave, Gainesville, FL 32601
                     </div>
                 </div>
             </div>
